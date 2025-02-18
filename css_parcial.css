@@ -1,0 +1,20 @@
+footer {
+    background-color: #5b7bd1; /* Fondo oscuro */
+    color: white;           /* Texto en blanco */
+    padding: 20px 0;        /* Espaciado interno (padding) */
+    text-align: center;     /* Centra el texto */
+    font-size: 14px;        /* Tamaño de fuente */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    background-color: #275ef5; /* Fondo oscuro */
+    color: white;           /* Texto en blanco */
+    padding: 20px 0;        /* Espaciado interno (padding) */
+    text-align: center;     /* Centra el texto */
+    font-size: 14px;        /* Tamaño de fuente */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
