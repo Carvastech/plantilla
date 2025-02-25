@@ -1,4 +1,20 @@
-// Crear el Custom Element 'mi-boton'
+document.getElementById("chaparrastiqueid").addEventListener("dblclick", function() {
+    // Abrir el enlace en una nueva pestaña
+    window.open("https://www.snet.gob.sv/Geologia/Vulcanologia/memorias/mtecVSM2.pdf", "_blank"); // Cambia el enlace por el que desees
+});
+// Doble clic en la imagen de Alegría
+document.getElementById("alegriaid").addEventListener("dblclick", function() {
+    window.open("https://www.elsalvador.com/fotogalerias/entretenimiento-fotogalerias/alegria-el-salvador-usulutan-turismo-rural-turistas-cafe/1021551/2022/", "_blank"); // Cambia el enlace por el que desees
+});
+
+// Doble clic en la imagen de Pericón
+document.getElementById("periconid").addEventListener("dblclick", function() {
+    window.open("https://cabanasymiradorelpericon.com.sv/", "_blank"); // Cambia el enlace por el que desees
+});
+
+
+
+
 class MiBoton extends HTMLElement {
     constructor() {
         super(); // Llamamos al constructor de HTMLElement
@@ -6,7 +22,7 @@ class MiBoton extends HTMLElement {
 
         // Crear el botón
         const boton = document.createElement('button');
-        
+
         // Obtener los atributos del Custom Element
         const texto = this.getAttribute('texto');
         const enlace = this.getAttribute('enlace');
@@ -15,6 +31,12 @@ class MiBoton extends HTMLElement {
         boton.textContent = texto;
         boton.addEventListener('click', () => {
             window.open(enlace, '_blank'); // Abrir el enlace en una nueva pestaña
+        });
+
+        // Añadir evento de doble click
+        boton.addEventListener('dblclick', () => {
+            alert("¡Doble clic detectado!");
+            // Aquí puedes agregar el comportamiento que desees al hacer doble clic.
         });
 
         // Estilo del Custom Element
@@ -45,7 +67,7 @@ class MiBoton extends HTMLElement {
                 background-color: #218838; /* Color verde más oscuro cuando se pasa el ratón */
             }
         `;
-        
+
         // Crear un contenedor para el botón
         const wrapper = document.createElement('div');
         wrapper.appendChild(boton);
@@ -57,3 +79,4 @@ class MiBoton extends HTMLElement {
 
 // Registrar el Custom Element
 customElements.define('mi-boton', MiBoton);
+
