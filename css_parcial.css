@@ -1,5 +1,5 @@
 footer {
-    background-color: #5b7bd1; /* Fondo oscuro */
+    background-color: #118a1b; /* Fondo oscuro */
     color: white;           /* Texto en blanco */
     padding: 1px 0;        /* Espaciado interno (padding) */
     text-align: center;     /* Centra el texto */
@@ -9,7 +9,7 @@ footer {
     width: 100%;
 }
 h1 {
-    background-color: #275ef5; /* Fondo oscuro */
+    background-color: #198d28; /* Fondo oscuro */
     color: white;           /* Texto en blanco */
     padding: 20px 0;        /* Espaciado interno (padding) */
     text-align: center;     /* Centra el texto */
@@ -18,6 +18,33 @@ h1 {
     bottom: 0;
     width: 100%;
 }
-header img {
-    height: 50px;                   /* Ajustamos el tamaño de la imagen */
+.contenedor {
+    display: flex; /* Usamos Flexbox para alinear las divisiones en una fila */
+    gap: 20px; /* Espacio entre las divisiones */
+}
+
+.chaparrastique, .alegria, .pericon {
+    width: 48%; /* Ajusta el tamaño de las divisiones */
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #05360e;
+    background-color: #f0f0f0;
+}
+
+.chaparrastique img,  .pericon img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.alegria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.chaparrastique p, .alegria p, .pericon {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
 }
